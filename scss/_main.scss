@@ -1,0 +1,39 @@
+.container {
+  text-align: center;
+  background-color: $tertiary-color;
+  transition: background-color 200ms ease-in-out;
+  &:hover {
+  background-color: $secondary-color;
+  }
+
+  div {
+    @include divvy;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  h1 {
+    font-size: $font-lg;
+    color: yellow;
+    padding: 1em;
+    border: 1px solid $secondary-color;
+  }
+}
+
+.imgDiv {
+  text-align: center;
+  margin-top: 2em;
+  background-color: grey;
+  perspective: 700px;
+  &:hover {
+    background-color: white;
+  }
+}
+
+img {
+  border-radius: 8px;
+  transition: transform 250ms ease-in-out;
+  &:hover {
+    transform: rotateY(180deg);
+  }
+}
